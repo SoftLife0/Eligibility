@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+	<title>Registration Form</title>
+</head>
+<body>
+	<script>
+  		AOS.init();
+	</script>
+	<section>
+   <nav class="nav-bar">
+     <div class="nav">
+       <img src="https://www.central.edu.gh/virgin/images/Central-Uni-logo.png">
+     </div>
+   </nav> 
+  </section>
+	<form action="#" class="form">
+      <h1 class="text-center" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Eligibility Checker</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+         <div class="progress-step progress-step-active" data-title="Personal Information"></div>
+         <div class="progress-step" data-title="Core Subjects"></div>
+         <div class="progress-step" data-title="Elective Subjects"></div>
+       </div>
+
+      <p class="note"><strong style="text-decoration-line: underline; text-decoration-style: double;">Note</strong> : Please fill this form with details from your slip.</p>
+      <div class="form-step form-step-active">
+        <div class="input-group">
+            <label for="name"><strong>Name</strong></label>
+            <input type="text" name="firstname" placeholder="Fullname" />
+        </div>
+        <div class="input-group">
+          <label for="telephone"><strong>Telephone</strong></label>
+          <input type="text" name="telephone" placeholder="Phone Number"/>
+        </div>
+        <div class="form-group">
+          <label for="course"><strong>What course did you offer</strong></label>
+          <select class="form-control" name="category">
+                <option name="table1" value="1"  selected="true" disabled="disabled">Select your course</option>
+                <option name="category1" value="general-art">General Arts</option>
+                <option name="Category2" value="science">Science</option>
+                <option name="category1" value="business">Business</option>
+                <option name="category1" value="visual-arts">Visual Arts</option>
+                <option name="category1" value="home-economics">Home Economics</option>
+                <option name="category1" value="agriculture">Agriculture</option>
+          </select>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next btn-danger width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <h2 class="text-center">Core Subject</h2>
+   
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input class="form-control" type="text" value="Mathematics" disabled aria-describedby="helpId">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <select  class="form-control" name="mathscore" required>
+                <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                <option value="A1">A1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+                <option value="C4">C4</option>
+                <option value="C5">C5</option>
+                <option value="C6">C6</option>
+                <option value="D7">D7</option>
+                <option value="E8">E8</option>
+                <option value="F9">F9</option>
+                <option value="None">None</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input class="form-control" type="text" value="English" disabled aria-describedby="helpId">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <select  class="form-control" name="englishscore" required>
+                <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                <option value="A1">A1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+                <option value="C4">C4</option>
+                <option value="C5">C5</option>
+                <option value="C6">C6</option>
+                <option value="D7">D7</option>
+                <option value="E8">E8</option>
+                <option value="F9">F9</option>
+                <option value="None">None</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input class="form-control" type="text" value="Integrated Science" disabled aria-describedby="helpId">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <select  class="form-control" name="sciencescore" required>
+                <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                <option value="A1">A1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+                <option value="C4">C4</option>
+                <option value="C5">C5</option>
+                <option value="C6">C6</option>
+                <option value="D7">D7</option>
+                <option value="E8">E8</option>
+                <option value="F9">F9</option>
+                <option value="None">None</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input class="form-control" type="text" value="Social Studies" disabled aria-describedby="helpId">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <select  class="form-control" name="socialscore" required>
+                <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                <option value="A1">A1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+                <option value="C4">C4</option>
+                <option value="C5">C5</option>
+                <option value="C6">C6</option>
+                <option value="D7">D7</option>
+                <option value="E8">E8</option>
+                <option value="F9">F9</option>
+                <option value="None">None</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev btn-danger">Previous</a>
+          <a href="#" class="btn btn-next btn-danger">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <h2 class="text-center">Elective Subject</h2>
+        
+        <div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <select  class="form-control" name="electivesubject" required>
+                  <option name="table1" value="1"  selected="true" disabled="disabled">--Select Elective--</option>
+                  <option value="Biology">Biology</option>
+                  <option value="Chemistry">Chemistry</option>
+                  <option value="E-Math">E-Math</option>
+                  <option value="Physics">Physics</option>
+                  <option value="Economics">Economics</option>
+                  <option value="Management">Management</option>
+                  <option value="Geography">Geography</option>
+                  <option value="Government">Government</option>
+                  <option value="GKA">GKA</option>
+                  <option value="Accounting">Accounting</option>
+                  <option value="Technical Drawing">Technical Drawing</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="Picture Making">Picture Making</option>
+                  <option value="Sculpture">Sculpture</option>
+                  <option value="Painting">Painting</option>
+                  <option value="Literature in English">Literature in English</option>
+                  <option value="French">French</option>
+                  <option value="History">History</option>
+                  <option value="Business Management">Business Management</option>
+                  <option value="Cost Accounting">Cost Accounting</option>
+                  <option value="Religious Studies">Religious Studies</option>
+                  <option value="Textile">Textile</option>
+                  <option value="Basketry">Basketry</option>
+                  <option value="Leather Work">Leather Work</option>
+                  <option value="Ceramics">Ceramics</option>
+                  <option value="Management in Living">Management in Living</option>
+                  <option value="Food and Nutrition">Food and Nutrition</option>
+                  <option value="Fante">Fante</option>
+                  <option value="Twi">Twi</option>
+                  <option value="ICT">ICT</option>
+                  <option value="Music">Music</option>
+                  <option value="None">None</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select  class="form-control" name="socialscore" required>
+                  <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                  <option value="A1">A1</option>
+                  <option value="B2">B2</option>
+                  <option value="B3">B3</option>
+                  <option value="C4">C4</option>
+                  <option value="C5">C5</option>
+                  <option value="C6">C6</option>
+                  <option value="D7">D7</option>
+                  <option value="E8">E8</option>
+                  <option value="F9">F9</option>
+                  <option value="None">None</option>
+                </select>
+              </div>
+            </div>
+                
+          </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <select  class="form-control" name="electivesubject" required>
+                      <option name="table1" value="1"  selected="true" disabled="disabled">--Select Elective--</option>
+                      <option value="Biology">Biology</option>
+                      <option value="Chemistry">Chemistry</option>
+                      <option value="E-Math">E-Math</option>
+                      <option value="Physics">Physics</option>
+                      <option value="Economics">Economics</option>
+                      <option value="Management">Management</option>
+                      <option value="Geography">Geography</option>
+                      <option value="Government">Government</option>
+                      <option value="GKA">GKA</option>
+                      <option value="Accounting">Accounting</option>
+                      <option value="Technical Drawing">Technical Drawing</option>
+                      <option value="Graphic Design">Graphic Design</option>
+                      <option value="Picture Making">Picture Making</option>
+                      <option value="Sculpture">Sculpture</option>
+                      <option value="Painting">Painting</option>
+                      <option value="Literature in English">Literature in English</option>
+                      <option value="French">French</option>
+                      <option value="History">History</option>
+                      <option value="Business Management">Business Management</option>
+                      <option value="Cost Accounting">Cost Accounting</option>
+                      <option value="Religious Studies">Religious Studies</option>
+                      <option value="Textile">Textile</option>
+                      <option value="Basketry">Basketry</option>
+                      <option value="Leather Work">Leather Work</option>
+                      <option value="Ceramics">Ceramics</option>
+                      <option value="Management in Living">Management in Living</option>
+                      <option value="Food and Nutrition">Food and Nutrition</option>
+                      <option value="Fante">Fante</option>
+                      <option value="Twi">Twi</option>
+                      <option value="ICT">ICT</option>
+                      <option value="Music">Music</option>
+                      <option value="None">None</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <select  class="form-control" name="socialscore" required>
+                      <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                      <option value="A1">A1</option>
+                      <option value="B2">B2</option>
+                      <option value="B3">B3</option>
+                      <option value="C4">C4</option>
+                      <option value="C5">C5</option>
+                      <option value="C6">C6</option>
+                      <option value="D7">D7</option>
+                      <option value="E8">E8</option>
+                      <option value="F9">F9</option>
+                      <option value="None">None</option>
+                    </select>
+                  </div>
+                </div>
+                    
+              </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <select  class="form-control" name="electivesubject" required>
+                          <option name="table1" value="1"  selected="true" disabled="disabled">--Select Elective--</option>
+                          <option value="Biology">Biology</option>
+                          <option value="Chemistry">Chemistry</option>
+                          <option value="E-Math">E-Math</option>
+                          <option value="Physics">Physics</option>
+                          <option value="Economics">Economics</option>
+                          <option value="Management">Management</option>
+                          <option value="Geography">Geography</option>
+                          <option value="Government">Government</option>
+                          <option value="GKA">GKA</option>
+                          <option value="Accounting">Accounting</option>
+                          <option value="Technical Drawing">Technical Drawing</option>
+                          <option value="Graphic Design">Graphic Design</option>
+                          <option value="Picture Making">Picture Making</option>
+                          <option value="Sculpture">Sculpture</option>
+                          <option value="Painting">Painting</option>
+                          <option value="Literature in English">Literature in English</option>
+                          <option value="French">French</option>
+                          <option value="History">History</option>
+                          <option value="Business Management">Business Management</option>
+                          <option value="Cost Accounting">Cost Accounting</option>
+                          <option value="Religious Studies">Religious Studies</option>
+                          <option value="Textile">Textile</option>
+                          <option value="Basketry">Basketry</option>
+                          <option value="Leather Work">Leather Work</option>
+                          <option value="Ceramics">Ceramics</option>
+                          <option value="Management in Living">Management in Living</option>
+                          <option value="Food and Nutrition">Food and Nutrition</option>
+                          <option value="Fante">Fante</option>
+                          <option value="Twi">Twi</option>
+                          <option value="ICT">ICT</option>
+                          <option value="Music">Music</option>
+                          <option value="None">None</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <select  class="form-control" name="socialscore" required>
+                          <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                          <option value="A1">A1</option>
+                          <option value="B2">B2</option>
+                          <option value="B3">B3</option>
+                          <option value="C4">C4</option>
+                          <option value="C5">C5</option>
+                          <option value="C6">C6</option>
+                          <option value="D7">D7</option>
+                          <option value="E8">E8</option>
+                          <option value="F9">F9</option>
+                          <option value="None">None</option>
+                        </select>
+                      </div>
+                    </div>
+                        
+                  </div>
+                  <h6 style="text-align: center;">Optional</h6>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <select  class="form-control" name="electivesubject" required>
+                        <option name="table1" value="1"  selected="true" disabled="disabled">--Select Elective--</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="E-Math">E-Math</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Economics">Economics</option>
+                        <option value="Management">Management</option>
+                        <option value="Geography">Geography</option>
+                        <option value="Government">Government</option>
+                        <option value="GKA">GKA</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="Technical Drawing">Technical Drawing</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Picture Making">Picture Making</option>
+                        <option value="Sculpture">Sculpture</option>
+                        <option value="Painting">Painting</option>
+                        <option value="Literature in English">Literature in English</option>
+                        <option value="French">French</option>
+                        <option value="History">History</option>
+                        <option value="Business Management">Business Management</option>
+                        <option value="Cost Accounting">Cost Accounting</option>
+                        <option value="Religious Studies">Religious Studies</option>
+                        <option value="Textile">Textile</option>
+                        <option value="Basketry">Basketry</option>
+                        <option value="Leather Work">Leather Work</option>
+                        <option value="Ceramics">Ceramics</option>
+                        <option value="Management in Living">Management in Living</option>
+                        <option value="Food and Nutrition">Food and Nutrition</option>
+                        <option value="Fante">Fante</option>
+                        <option value="Twi">Twi</option>
+                        <option value="ICT">ICT</option>
+                        <option value="Music">Music</option>
+                        <option value="None">None</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <select  class="form-control" name="socialscore" required>
+                        <option name="table1" value="1"  selected="true" disabled="disabled">--Grade--</option>
+                        <option value="A1">A1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="C4">C4</option>
+                        <option value="C5">C5</option>
+                        <option value="C6">C6</option>
+                        <option value="D7">D7</option>
+                        <option value="E8">E8</option>
+                        <option value="F9">F9</option>
+                        <option value="None">None</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev btn-danger">Previous</a>
+          <a href="yh.html" class="btn btn-submit btn-danger">Submit</a>
+        </div>
+      </div>
+    </form>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
